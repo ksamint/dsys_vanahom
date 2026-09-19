@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/ksamint/tableai_designaha",
+  "commit": "17e8486df5cc2896049164fdef9c876e5790897b",
+  "folder": "VANAHOM",
+  "brandApi": "https://apuch.art/api/brands/vanahom.json",
+  "retrievedAt": "2026-09-19T12:56:16.646125+00:00",
+  "files": {
+    "VANAHOM/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "VANAHOM/vanahom_design.md": "d91cce85603e5f152d0cb5a0f827a485c83782944aaa0d02af63352d4425a2af"
+  }
+}

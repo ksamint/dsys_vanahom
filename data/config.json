@@ -1,0 +1,77 @@
+{
+  "slug": "vanahom",
+  "folder": "VANAHOM",
+  "name": "VANAHOM",
+  "nativeName": "凡纳弘途",
+  "description": "Mission-driven hospitality and extended-services enterprise builder.",
+  "officialWebsite": "",
+  "mainLanguage": "zh",
+  "intro": {
+    "zh": "凡纳弘途是使命驱动的酒店、旅居与延展服务企业构建者。",
+    "en": "VANAHOM is a mission-driven builder for hospitality, stay, and extended-service ventures."
+  },
+  "business": {
+    "zh": "酒店、旅居、康养与延展服务。",
+    "en": "Hospitality, stay, wellbeing, and extended services."
+  },
+  "primaryGuide": "VANAHOM/vanahom_design.md",
+  "theme": {
+    "mode": "light",
+    "primary": "#B12137",
+    "accent": "#A8ADAD",
+    "secondary": "#8E1A2C",
+    "surface": "#F6F4F2",
+    "paper": "#FFFFFF",
+    "ink": "#211B1C",
+    "muted": "#6E7475",
+    "line": "rgba(33, 27, 28, 0.14)",
+    "keywords": [
+      "Hongtu red",
+      "Cangling grey",
+      "white space",
+      "hospitality",
+      "wellbeing"
+    ]
+  },
+  "classification": {
+    "tracks": {
+      "zh": [
+        "酒店旅居",
+        "康养服务",
+        "企业构建"
+      ],
+      "en": [
+        "Hospitality",
+        "Wellbeing stays",
+        "Venture building"
+      ]
+    },
+    "audiences": {
+      "zh": [
+        "酒店业主",
+        "旅居运营方",
+        "康养品牌"
+      ],
+      "en": [
+        "Hotel owners",
+        "Stay operators",
+        "Wellbeing brands"
+      ]
+    },
+    "tags": {
+      "zh": [
+        "酒店",
+        "旅居",
+        "康养",
+        "服务延展"
+      ],
+      "en": [
+        "Hospitality",
+        "Stay",
+        "Wellbeing",
+        "Extended services"
+      ]
+    }
+  },
+  "designSystemUrl": "https://github.com/ksamint/dsys_vanahom"
+}
