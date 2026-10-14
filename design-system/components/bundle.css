@@ -1,0 +1,107 @@
+/* 凡纳弘途 VANAHOM — component styles. Every value comes from tokens.css. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&display=swap");
+
+.vh { font-family: var(--font-sans); color: var(--ink-soft); background: var(--paper); -webkit-font-smoothing: antialiased; }
+.vh *, .vh *::before, .vh *::after { box-sizing: border-box; }
+
+/* Wordmark ----------------------------------------------------------- */
+.vh-wordmark { display: block; height: auto; }
+.vh-wordmark-zone { display: inline-block; padding: calc(var(--vh-mark-h, 32px)); outline: var(--hairline) dashed var(--cangling-grey); }
+
+/* Eyebrow ------------------------------------------------------------- */
+.vh-eyebrow { display: inline-flex; align-items: center; gap: var(--space-2); margin: 0; font-family: var(--font-sans); font-size: 12px; line-height: 1.4; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--cangling-grey); }
+.vh-eyebrow::before { content: ""; width: 24px; height: var(--rule-accent); background: var(--hongtu-red); }
+
+/* SectionTitle -------------------------------------------------------- */
+.vh-section-title { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-10); padding-bottom: var(--space-6); }
+.vh-section-title__text { margin: 0; font-family: var(--font-display); font-size: 44px; line-height: 1.06; font-weight: 500; letter-spacing: -.01em; color: var(--ink); text-wrap: balance; }
+.vh-section-title__brand { color: var(--hongtu-red); font-weight: 600; }
+.vh-section-title__sep { display: inline-block; width: var(--rule-accent); height: .8em; margin: 0 .35em; vertical-align: -.05em; background: var(--hongtu-red); }
+.vh-section-title__rule { display: block; width: 96px; height: var(--rule-accent); margin-top: var(--space-4); background: var(--hongtu-red); }
+.vh-section-title__logo { width: 160px; flex: none; margin-top: 8px; }
+
+/* Maxim --------------------------------------------------------------- */
+.vh-maxim { margin: 0; }
+.vh-maxim__cn { margin: 0; font-family: var(--font-display); font-size: 64px; line-height: 1.06; font-weight: 600; letter-spacing: -.01em; color: var(--hongtu-red); text-wrap: balance; }
+.vh-maxim__cn sup { font-size: .4em; font-weight: 400; color: var(--cangling-grey); vertical-align: top; }
+.vh-maxim__en { margin: var(--space-2) 0 0; font-family: var(--font-sans); font-size: 21px; line-height: 1.6; font-weight: 400; color: var(--hongtu-red-deep); }
+.vh-maxim__source { margin: var(--space-6) 0 0; font-size: 12px; line-height: 1.5; color: var(--grey-deep); }
+
+/* Button -------------------------------------------------------------- */
+.vh-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 44px; padding: 0 var(--space-6); border: var(--hairline) solid var(--ink); border-radius: var(--radius-sm); background: var(--paper); color: var(--ink); font: 500 14px/1.5 var(--font-sans); letter-spacing: .02em; cursor: pointer; transition: background-color var(--motion-base) ease-out, color var(--motion-base) ease-out; }
+.vh-btn:hover { background: var(--mist); }
+.vh-btn:focus-visible { outline: 2px solid var(--hongtu-red-deep); outline-offset: 2px; }
+.vh-btn--primary { border-color: var(--hongtu-red); background: var(--hongtu-red); color: var(--paper); }
+.vh-btn--primary:hover { background: var(--hongtu-red-deep); border-color: var(--hongtu-red-deep); }
+.vh-btn--text { border-color: transparent; background: none; padding: 0; min-height: 0; color: var(--hongtu-red-deep); border-bottom: var(--hairline) solid var(--hongtu-red-deep); border-radius: var(--radius-none); }
+.vh-btn--text:hover { background: none; color: var(--hongtu-red); }
+.vh-btn[disabled] { border-color: var(--line); color: var(--grey-deep); background: var(--cell); cursor: not-allowed; }
+
+/* ServiceMatrix ------------------------------------------------------- */
+.vh-matrix { width: 100%; border-collapse: separate; border-spacing: 8px; font-size: 14px; line-height: 1.8; text-align: center; }
+.vh-matrix th[scope="col"] { padding: var(--space-4); background: var(--hongtu-red); color: var(--paper); font-weight: 600; font-size: 16px; }
+.vh-matrix th[scope="row"] { width: 120px; padding: var(--space-3); background: var(--red-wash); color: var(--ink-soft); font-weight: 500; }
+.vh-matrix td { padding: var(--space-3) var(--space-4); background: var(--cell); color: var(--ink-soft); vertical-align: middle; }
+.vh-matrix td ul { margin: 0; padding: 0; list-style: none; }
+.vh-matrix .vh-corner { background: none; }
+
+/* TeamCard ------------------------------------------------------------ */
+.vh-team-card { position: relative; padding: 14px 14px 14px 14px; background: var(--hongtu-red); clip-path: polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px); }
+.vh-team-card__body { padding: var(--space-4); background: var(--paper); }
+.vh-team-card__head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); }
+.vh-team-card__name { margin: 0; font-family: var(--font-sans); font-size: 20px; font-weight: 500; color: var(--ink); }
+.vh-team-card__role { font-size: 13px; font-weight: 600; color: var(--hongtu-red-deep); white-space: nowrap; }
+.vh-team-card__bio { margin: var(--space-2) 0 0; font-size: 13px; line-height: 1.6; color: var(--ink-soft); }
+
+/* BioBanner ----------------------------------------------------------- */
+.vh-bio-banner { display: grid; grid-template-columns: 1fr auto; gap: var(--space-2) var(--space-10); padding: var(--space-10) var(--space-24) var(--space-6); background: var(--hongtu-red); color: var(--paper); }
+.vh-bio-banner__name { margin: 0; font-family: var(--font-sans); font-size: 40px; line-height: 1.15; font-weight: 600; }
+.vh-bio-banner__role { margin: 0; font-size: 24px; line-height: 1.3; font-weight: 400; }
+.vh-bio-banner__logo { grid-column: 2; grid-row: 1 / span 2; align-self: center; width: 200px; }
+.vh-bio-banner__tags { grid-column: 1 / -1; margin: var(--space-4) 0 0; font-size: 14px; line-height: 1.6; }
+
+/* CaseStudy ----------------------------------------------------------- */
+.vh-case { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-10); align-items: start; }
+.vh-case__title { margin: 0 0 var(--space-4); font-family: var(--font-sans); font-size: 20px; font-weight: 600; color: var(--hongtu-red-deep); }
+.vh-case__facts { margin: 0; padding-left: 1.1em; font-size: 15px; line-height: 2; color: var(--ink-soft); }
+.vh-case__media { position: relative; margin: 0 var(--space-3) var(--space-3) 0; }
+.vh-case__media::before { content: ""; position: absolute; inset: var(--space-6) calc(var(--space-3) * -1) calc(var(--space-3) * -1) var(--space-3); background: var(--hongtu-red); }
+.vh-case__media > * { position: relative; display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-none); }
+
+/* TeamGrid ----------------------------------------------------------- */
+.vh-team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+
+/* SanctemTiers -------------------------------------------------------- */
+.vh-sanctem { font-family: var(--font-sans); background: var(--sanctem-sand); padding: var(--space-6); }
+.vh-tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
+.vh-tier { padding: var(--space-6) var(--space-4); text-align: center; color: var(--ink); }
+.vh-tier__name { margin: 0; font-size: 17px; font-weight: 600; }
+.vh-tier__line { margin: var(--space-2) 0 0; font-size: 14px; line-height: 1.6; }
+.vh-tier--community { background: var(--sanctem-tier-community); }
+.vh-tier--origin { background: var(--sanctem-tier-origin); }
+.vh-tier--essence { background: var(--sanctem-tier-essence); }
+.vh-tier--reserve { background: var(--sanctem-tier-reserve); color: var(--paper); }
+
+/* Responsive (this system's choice: the v0.4 deck is a fixed 16:9 slide) --- */
+@media (max-width: 960px) {
+  .vh-team-grid { grid-template-columns: repeat(2, 1fr); }
+  .vh-tiers { grid-template-columns: repeat(2, 1fr); }
+  .vh-bio-banner { padding-inline: var(--space-10); }
+}
+@media (max-width: 640px) {
+  .vh-section-title { flex-direction: column-reverse; gap: var(--space-4); }
+  .vh-section-title__text { font-size: clamp(26px, 8vw, 44px); }
+  .vh-maxim__cn { font-size: clamp(32px, 9vw, 64px); }
+  .vh-maxim__en { font-size: 17px; }
+  .vh-case { grid-template-columns: 1fr; }
+  .vh-team-grid, .vh-tiers { grid-template-columns: 1fr; }
+  .vh-bio-banner { grid-template-columns: 1fr; padding-inline: var(--space-6); }
+  .vh-bio-banner__logo { grid-column: 1; grid-row: auto; order: -1; width: 140px; }
+  .vh-bio-banner__name { font-size: 28px; }
+  .vh-bio-banner__role { font-size: 18px; }
+  .vh-team-card__head { flex-direction: column; gap: var(--space-1); }
+  .vh-matrix-scroll { overflow-x: auto; }
+  .vh-matrix-scroll .vh-matrix { min-width: 720px; }
+}
+
+@media (prefers-reduced-motion: reduce) { .vh-btn { transition: none; } }

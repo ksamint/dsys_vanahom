@@ -1,0 +1,51 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../bundle.css">
+<title>凡纳弘途 VANAHOM</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--paper); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:320px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:320px; }
+  .art svg { display:block; width:480px; height:320px; }
+  .red { fill:var(--hongtu-red); }
+  .ink { fill:var(--ink); }
+  .grey { fill:var(--cangling-grey); }
+  .wash { fill:var(--red-wash); }
+  .blk { rx:var(--radius-none); }
+  .cut { stroke:var(--paper); stroke-width:var(--hairline); }
+  .rule { stroke:var(--cangling-grey); stroke-width:var(--hairline); }
+  .words { position:absolute; left:var(--space-10); bottom:var(--space-10); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:80px; line-height:.95; font-weight:500; letter-spacing:-.01em; color:var(--ink); }
+  .tag { margin:var(--space-4) 0 0 2px; font-size:14px; line-height:20px; color:var(--grey-deep); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 480 320" width="480" height="320">
+      <!--
+        blocks      hongtu-red 96×264 slab bled off the top (≈8% of 960×320, the brand's own red ceiling) · ink 320×120 bled off the right · cangling-grey 128×56 · red-wash 176×56 bled right
+        arrangement one tall red slab with satellites (the deck's TOMORROW / TODAY / YESTERDAY slab), bottoms on one line space-16 above the edge, space-4 gutters
+        pattern     a few hairlines, from "structure comes from 1px hairlines and space, never shadows": three cangling-grey rules at a space-4 pitch over the satellites, one paper hairline cutting the slab and ink like the deck's struck-through YESTERDAY
+        scales      sides in space-2 multiples; gutters space-4; rule pitch space-4; strokes hairline; corners radius-none
+      -->
+      <line class="rule" x1="160" y1="16.5" x2="480" y2="16.5"/>
+      <line class="rule" x1="160" y1="32.5" x2="480" y2="32.5"/>
+      <line class="rule" x1="160" y1="48.5" x2="480" y2="48.5"/>
+      <rect class="red blk" x="48" y="-8" width="96" height="264"/>
+      <rect class="grey blk" x="160" y="64" width="128" height="56"/>
+      <rect class="wash blk" x="304" y="64" width="176" height="56"/>
+      <rect class="ink blk" x="160" y="136" width="320" height="120"/>
+      <line class="cut" x1="48" y1="200.5" x2="480" y2="200.5"/>
+    </svg>
+  </div>
+  <div class="words">
+    <h1 class="name">凡纳弘途<br>VANAHOM</h1>
+    <p class="tag">为者常成，行者常至 · Building Tomorrow, Today</p>
+  </div>
+</div>
+</body>
+</html>
